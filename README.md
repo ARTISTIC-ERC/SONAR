@@ -7,17 +7,17 @@ The main function is written in the 'simulate_SONAR_RFB.py'. The related kinetic
 The 'initialize_kMC_run.py' is for initialization. The input parameters can be altered in 'user_input_SONAR.ini'
 
 OUTPUT FILES
-There will be ofur output files, once the code is launched. 
-The output file with '.txt' recorded the simulation results, including the simualtion time, time step, electrode charge density, 
+There will be three output files. 
+The output file with '.txt' records the simulation results, including the simualtion time, time step, electrode charge density, 
 the potential drop thorugh the compact layer, the potential on the interface between the compact layer and the diffuse layer, and the type of events.
-The output file with '.xyz' recorded the location of each ions. To visualise the 3D configuration of the simualtion box, users can use the software Ovito to process.
-the output file with '.out
+The output file with '.xyz' records the location of each ions. To visualise the 3D configuration of the simualtion box, users can use the software Ovito to process.
+the output file with '.log' is the logfile which doesn't contain simulation results.
 
 POST PROCESSING
-related post-processing code will be added later
+Related post-processing code will be released later
 
 HOW TO LAUNCH
-launch in terminal with the command line
+Launch in terminal with the command line
 'python simulate_SONAR_RFB.py'
 
 ACKNOWLEDGEMENT

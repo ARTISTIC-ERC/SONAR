@@ -35,5 +35,5 @@ Gaining Insight into the Electrochemical Interface Dynamics in an Organic Redox 
 Small 2022, 18, 2107720. https://doi.org/10.1002/smll.202107720
 
 COPYRIGHT
-(c) Jia YU, Alejandro A. Franco 2022 <alejandro.franco@u-picardir.fr>
+© Jia YU, Alejandro A. Franco 2022 <alejandro.franco@u-picardir.fr>
 This model is for academic and research use only, for commercialization request, please contact Prof. Alejandro Franco.

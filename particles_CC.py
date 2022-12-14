@@ -1619,11 +1619,9 @@ class Board():
     def clean_outfiles(self):
         with open(self.file_xyz, 'w') as f:
             f.write('')
-        with open(self.file_pot, 'w') as f:
-            f.write('      Time      c_MV+     c_MV2+     c_MV0       E_interface     Potential(V)          Delta_E       Capacitance\n')
         with open(self.file_psd, 'w') as f:
-            f.write('      Time          Del_t          J_Far      ThetaFree          Sigma         Gamma      '
-                    'Overpotential  Phi_inter            Event \n')
+            f.write('      Time          Del_t          Sigma         Gamma '
+                    'Potential_Drop      Phi_inter  Tot_Potential           Event Dischrge_Rate\n')
 
     def write(self):
         xyz = (f'{len(self) + 8}\n'
@@ -1635,23 +1633,16 @@ class Board():
 
         for x, y, z in box_top:
             xyz += f'{5:4d} {x:2d} {y:2d} {z:2d}\n'
-        #   pxyz += f'{0:4d} {x:2d} {y:2d} {z:2d}\n'
 
         for particle in self:
             xyz += f'{particle}\n'
 
-        pot = f'{self.time:10.4e} {self.conc_mv_charged:10.4f} {self.conc_mv_discharged:10.4f} ' \
-              f'{self.conc_mv_degradate:10.4f} {self.reaction_plane_E:16.4e} {self.electrode_potential:16.4e}\n'
-
-        psd = f'{self.time:10.4e} {self.dt:14.4e} {self.j_far:14.4e} {self.theta_free:14.4e} {self.charge_density:14.4e}' \
-              f'{self.big_gamma:14.4e} {self.potential_drop:14.4e} {self.phi_inter:14.4e} ' \
+        psd = f'{self.time:10.4e} {self.dt:14.4e} {self.charge_density:14.4e}' \
+              f'{self.big_gamma:14.4e} {self.potential_drop:14.4e} {self.phi_inter:14.4e} {self.electrode_potential:14.4e}' \
               f'{self.event_type:>16} {self.discharge_rate}\n'
 
         with open(self.file_xyz, 'a') as f:
             f.write(xyz)
-
-        with open(self.file_pot, 'a') as f:
-            f.write(pot)
 
         with open(self.file_psd, 'a') as f:
             f.write(psd)

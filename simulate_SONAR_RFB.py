@@ -21,7 +21,6 @@ def main(argv=''):
         board.write()
         raise e
 
-'''
-Change the first value to modify the output file name'''
+'''Change the first value to modify the output file name'''
 if __name__ == '__main__':
-    main('r_c0.1_Jinp-50_1DBL -c user_input_SONAR.ini')
+    main('simulation_name -c user_input_SONAR.ini')

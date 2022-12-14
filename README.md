@@ -14,10 +14,9 @@ The Double Layer model is immplemented to capture the formaiton of the electrica
 
 OUTPUT FILES
 There will be three output files. 
-The output file with '.txt' records the simulation results, including the simualtion time, time step, electrode charge density, 
-the potential drop thorugh the compact layer, the potential on the interface between the compact layer and the diffuse layer, and the type of events.
+The output file with '.txt' records the simulation results, including the simualtion time, time step, electrode charge density, the potential drop thorugh the compact layer, the potential on the interface between the compact layer and the diffuse layer, and the type of events.
 The output file with '.xyz' records the location of each ions. To visualise the 3D configuration of the simualtion box, users can use the software Ovito to process.
-the output file with '.log' is the logfile which doesn't contain simulation results.
+The output file with '.log' is the logfile which doesn't contain simulation results.
 
 POST PROCESSING
 Related post-processing code will be released later

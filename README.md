@@ -37,6 +37,12 @@ Launch in terminal with the command line:
 python simulate_SONAR_RFB.py'
 ```
 
+#### AUTHORS
+- **Jia Yu**
+- **Garima Shukla**
+- **Oier Arcelus**
+- **Alejandro A. Franco**
+
 #### ACKNOWLEDGEMENT
 This model is developed under the funding of the European project SONAR, under the grant agreement 875489
 

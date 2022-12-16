@@ -2,6 +2,9 @@
 ![sonar](https://user-images.githubusercontent.com/60663976/208126144-5d568843-618f-4a72-9dd7-5c76fc88bc09.png)
 
 ## SONAR PROJECT
+
+https://www.sonar-redox.eu/en/H2020-project-SONAR.html
+
 In search of truly competitive solutions for storing energy from renewable resources, the SONAR-team sets out to develop a framework for the simulation-based screening of electroactive materials for organic redox flow batteries (RFBs) – in aqueous and non-aqueous solutions. This will help to reduce the cost and time-to-market and thus strengthen the competitiveness of the EU’s battery industry.
 
 We follow a multiscale modelling paradigm, starting from the automated generation of candidate structures for the electroactive material and then iterate through molecular-, electrochemical interface-, porous electrodes-, cell-, stack-, system- and techno-economic-level models.
@@ -34,7 +37,7 @@ Related post-processing code will be released later
 ## HOW TO LAUNCH
 Launch in terminal with the command line:
 ```
-python simulate_SONAR_RFB.py'
+python simulate_SONAR_RFB.py
 ```
 
 #### AUTHORS
@@ -43,13 +46,16 @@ python simulate_SONAR_RFB.py'
 - **Oier Arcelus**
 - **Alejandro A. Franco**
 
+
 #### ACKNOWLEDGEMENT
 This model is developed under the funding of the European project SONAR, under the grant agreement 875489
+
 
 #### TO CITE:
 Yu, J., Shukla, G., Fornari, R. P., Arcelus, O., Shodiev, A., de, P., Franco, A. A., 
 Gaining Insight into the Electrochemical Interface Dynamics in an Organic Redox Flow Battery with a Kinetic Monte Carlo Approach. 
 Small 2022, 18, 2107720. https://doi.org/10.1002/smll.202107720
+
 
 #### COPYRIGHT
 © Université de Picardie Jules Verne & CNRS (Laboratoire de Réactivité et Chimie de Solides) -  <alejandro.franco@u-picardie.fr>

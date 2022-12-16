@@ -1,12 +1,18 @@
 # SONAR kinetic Monte Carlo model
+Logo Section
 
-PROJECT SUMMARY
+https://user-images.githubusercontent.com/60663976/208126144-5d568843-618f-4a72-9dd7-5c76fc88bc09.png
+
+# SONAR PROJECT
+Sonar
+
+# PROJECT SUMMARY
 This python coded model aims to simulate the discharge of the anode materials in a redox flow battery system. The defaut material is methyl viologen. 
 The discharging process is simulated by kinetic Monte Carlo algorithm. In each iteration, the algorithm chooses one event to execute and update the system configuration.
 The main function is written in the 'simulate_SONAR_RFB.py'. The related kinetic Monte Carlo algorithm is coded in the 'particles_CC.py'. 
 The 'initialize_kMC_run.py' is for initialization. The input parameters can be altered in 'user_input_SONAR.ini'
 
-KMC MODEL
+# KMC MODEL
 The kinetic Monte Carlo model adopted in this work is called the Variable Step Size Method. The algorithm first identified all the possible events based on the current configuration of the simulation box and then randomly chooses an event to execute in each iteration. The configuration and the characteristics of the system is then updated according to the chosen event. The cutoff condition is the simulation time.
 
 DOUBLE LAYER MODEL
@@ -34,5 +40,5 @@ Gaining Insight into the Electrochemical Interface Dynamics in an Organic Redox 
 Small 2022, 18, 2107720. https://doi.org/10.1002/smll.202107720
 
 COPYRIGHT
-© Jia YU, Alejandro A. Franco 2022 <alejandro.franco@u-picardie.fr>
-This model is for academic and research use only, for commercialization request, please contact Prof. Alejandro A. Franco.
+© Université de Picardie Jules Verne & CNRS (Laboratoire de Réactivité et Chimie de Solides) -  <alejandro.franco@u-picardie.fr>
+This model is for academic use only, for commercialization request, please contact Prof. Alejandro A. Franco.
